@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Stick&display=swap');
+
+/* Fontes usadas: Stick(logo e detalhes) e Alata(Textos em geral)
+font-family: 'Alata', sans-serif;
+font-family: 'Stick', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "h h h h h h"
+    "m m m s s s";
+}
+
+header{
+    grid-area: h;
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main{
+    grid-area: m;
+    background-image: url(imagens/babyyodafofo.webp);
+    background-size: cover ;
+    height: 44vw;
+    width: 100%;
+}
+
+section{
+    grid-area: s;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > form > h1{
+    color: #3f3f3f;
+    font-size: 4rem;
+}
+
+footer{
+    grid-area: f;
+    background-color: blueviolet;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > label{
+    margin-top: 0.5vw;
+    margin-bottom: 0.25vw;
+}
+
+#lbotao{
+    background-color: #00B2FF;
+
+}
+
+input[type="submit"]{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 20px;
+    height: 80px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    box-sizing: border-box;
+}
+
+form > input, form > label{
+    font-size: 2rem;
+
+}
+
+form > input{
+    border-radius: 20px;
+    height: 60px;
+    border: none;
+    border-color: black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+form > input:focus{
+    background-color: #7c7c7c7c;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}       
+
+@media(max-width:800px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "h h h"
+        "m m m"
+        "s s s";
+    }
+    
+}

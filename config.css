@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Stick&display=swap');
+
+/* Fontes usadas: Stick(logo e detalhes) e Alata(Textos em geral)
+font-family: 'Alata', sans-serif;
+font-family: 'Stick', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "h h h"
+    "m m m"
+    "f f f";
+}
+
+header{
+    grid-area: h;
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 80px;
+    width: 100vw;
+    position: relative;
+}
+
+.user:hover{
+    background-color: red;
+}
+
+main{
+    grid-area: m;
+
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card{
+    padding: 2px 16px;
+}
+
+.drop-profile{
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-profile a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-profile a:hover {
+    background-color: #282828;
+    color: white;
+}
+
+.dropper:hover .drop-profile {
+    display:flex;
+    flex-direction: column;
+    justify-content: right;}
+
+.user{
+    background-color: #3f3f3f;
+    color: white;
+    padding: 0.4vw;
+    font-size: 16px;
+    border: none;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 2px 20px;
+}
+
+.linha{
+    width: 310px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-left: 20px;
+}
+
+p{
+    padding: 2px 20px;
+}

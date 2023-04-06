@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Stick&display=swap');
+
+/* Fontes usadas: Stick(logo e detalhes) e Alata(Textos em geral)
+font-family: 'Alata', sans-serif;
+font-family: 'Stick', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: black;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto;
+    grid-template-areas: 
+    "h h h"
+    "c c c"
+    "r r r";
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #3F3F3F;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-area: h;
+}
+
+.logo {  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lc{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    color: aliceblue;
+    font-family: 'Alata', sans-serif;
+}
+
+a:link {
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.cadastro{
+
+    font-size: 1.5rem;
+}
+
+.main{
+    background-color: black;
+    grid-area: c;
+}
+
+.nome{
+    font-family: 'Stick', sans-serif;
+    font-size: 2.1rem;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.linha{
+    width: 310px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-left: 20px;
+}
+
+.slogan{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.fee{
+    color: aliceblue;
+    font-size: 1.7rem;
+    font-family: 'Stick', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+}
+
+.linha2{
+    width: 300px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-left: 42vw;
+    margin-right: 50vw;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vw;
+    border-radius: 1000px;
+    background-color: black;
+
+}
+
+.imagens img{
+    border-radius: 20px;
+}
+
+.rodape{
+    background-color: #3F3F3F;
+    width: 100vw;
+    height: 80px;
+    grid-area: r;
+}
+
+.rodape {
+    position:absolute;
+    bottom:0;
+    }

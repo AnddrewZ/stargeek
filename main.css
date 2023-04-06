@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Stick&display=swap');
+
+/* Fontes usadas: Stick(logo e detalhes) e Alata(Textos em geral)
+font-family: 'Alata', sans-serif;
+font-family: 'Stick', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "h h h"
+    "m m m"
+    "f f f";
+}
+
+header{
+    grid-area: h;
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 80px;
+    width: 100vw;
+    position: relative;
+}
+
+.user:hover{
+    background-color: red;
+}
+
+main{
+    grid-area: m;
+
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card{
+    padding: 2px 16px;
+}
+
+.drop-profile{
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-profile a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-profile a:hover {
+    background-color: #282828;
+    color: white;
+}
+
+.dropper:hover .drop-profile {
+    display:flex;
+    flex-direction: column;
+    justify-content: right;}
+
+.user{
+    background-color: #3f3f3f;
+    color: white;
+    padding: 0.4vw;
+    font-size: 16px;
+    border: none;
+}
+
+/* Overlay para Adicionar Ítens */
+
+/* .cards{ 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards a{
+    display: inline-block;
+}*/
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+  }
+   
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+   
+  .footer {
+    text-align: right;
+    margin-top: 50px;
+  }
+   
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+  }
+   
+  .footer-btn-close {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  .modal_content{
+    background-color: aliceblue;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border: 1px 1px black;
+}
+
+.cards{
+    margin-top: 1vw;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 2px 20px;
+}
+
+.linha{
+    width: 310px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-left: 20px;
+}

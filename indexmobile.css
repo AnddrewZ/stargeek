@@ -12,9 +12,8 @@ font-family: 'Stick', sans-serif;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
-
 
 .container {
     display: grid;
@@ -82,6 +81,8 @@ a:active {
 .main {
     background-color: black;
     grid-area: c;
+    height: 580px;
+    
 }
 
 .nome {
@@ -134,6 +135,8 @@ a:active {
 
 .imagens img {
     border-radius: 20px;
+    height: 30vw;
+    width: 30vw;
 }
 
 .rodape {

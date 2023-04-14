@@ -38,10 +38,6 @@ header{
     position: relative;
 }
 
-.user:hover{
-    background-color: red;
-}
-
 main{
     grid-area: m;
 
@@ -55,38 +51,49 @@ main{
     padding: 2px 16px;
 }
 
+.dropper{
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 200px;
+    text-align: right;
+}
+
 .drop-profile{
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #282828;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 0px;
+    right: 20px;
+    padding: 10px;
+
 }
 
 .drop-profile a{
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
+
 }
+
 
 .drop-profile a:hover {
     background-color: #282828;
     color: white;
 }
 
-.dropper:hover .drop-profile {
-    display:flex;
-    flex-direction: column;
-    justify-content: right;}
 
-.user{
-    background-color: #3f3f3f;
-    color: white;
-    padding: 0.4vw;
-    font-size: 16px;
-    border: none;
+
+.dropper:hover .drop-profile {
+    display:block;
+    flex-direction: column;
+    justify-content: right;
+    right: 0;
 }
+
 
 h1{
     font-size: 2rem;
@@ -102,4 +109,38 @@ h1{
 
 p{
     padding: 2px 20px;
+}
+
+
+/* Tentativa 2 de fazer o menu */
+
+#menu{
+    display: none;
+}
+
+#menu:target{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#menu{
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    height: 120px;
+}
+
+#menu > a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.dropper {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    text-align: right;
 }

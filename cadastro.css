@@ -117,3 +117,7 @@ form > input:focus{
     }
     
 }
+
+input{
+    padding-left: 10px;
+}

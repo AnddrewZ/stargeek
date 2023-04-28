@@ -144,3 +144,18 @@ p{
     width: 200px;
     text-align: right;
 }
+
+
+::-webkit-scrollbar{
+    width: 5px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 32, 43);
+
+    
+}

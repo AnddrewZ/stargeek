@@ -48,6 +48,7 @@ body {
     justify-content: flex-end;
     color: aliceblue;
     font-family: 'Alata', sans-serif;
+    margin-right: 1vw;
 }
 
 a:link {
@@ -158,3 +159,17 @@ a:active {
     font-family: 'Alata', sans-serif;
 }
 
+
+::-webkit-scrollbar{
+    width: 5px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 32, 43);
+
+    
+}

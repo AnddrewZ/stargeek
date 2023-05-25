@@ -13,7 +13,7 @@ font-family: 'Stick', sans-serif;
 
 body{
     font-family: 'Alata', sans-serif;
-    background-color: black;
+    background-color: #0D1117;
     color: white;
 }
 
@@ -29,7 +29,7 @@ body{
 
 header{
     grid-area: h;
-    background-color: #3f3f3f;
+    background-color: #161B22;
     display: flex;
     flex-direction: row;
     justify-content:space-between;

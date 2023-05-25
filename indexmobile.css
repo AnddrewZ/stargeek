@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-    background-color: #3F3F3F;
+    background-color: #161B22;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ a:active {
 }
 
 .main {
-    background-color: black;
+    background-color: #0D1117;
     grid-area: c;
     height: 580px;
     
@@ -129,7 +129,7 @@ a:active {
     justify-content: space-between;
     margin: 5vw;
     border-radius: 1000px;
-    background-color: black;
+    background-color: #0D1117;
 
 }
 
@@ -140,7 +140,7 @@ a:active {
 }
 
 .rodape {
-    background-color: #3F3F3F;
+    background-color: #161B22;
     width: auto;
     height: 80px;
     grid-area: r;

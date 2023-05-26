@@ -11,7 +11,7 @@ const botaofechar = document.querySelector(".btnclose");
 const idelemento = document.getElementById("idalterar");
 
 carregarCatalogo()
-
+    
 botaomodal.onclick = () =>{
     nome.value = "";
     descricao.value = "";
